@@ -1,0 +1,10 @@
+@import './basic/base.css';
+@import './basic/reset.css';
+
+
+@import './components/figures.css';
+@import './components/forma.css';
+
+body {
+    background-color: aliceblue;
+}
