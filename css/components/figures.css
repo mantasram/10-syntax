@@ -1,0 +1,17 @@
+.kvadratas {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 40px;
+}
+
+.apskritimas {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+    border: 1px solide red;
+    border-radius: 50%;
+    background-color: black;
+}
