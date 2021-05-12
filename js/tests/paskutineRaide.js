@@ -3,3 +3,5 @@ function paskutineRaide(string) {
 }
 
 console.log(paskutineRaide('labas'));
+
+export { paskutineRaide };

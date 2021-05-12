@@ -3,3 +3,5 @@ function pirmaRaide(string) {
 }
 
 console.log(pirmaRaide('labas'));
+
+export { pirmaRaide }
