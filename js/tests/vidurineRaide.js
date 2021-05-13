@@ -1,17 +1,26 @@
-function vidurineRaide(string) {
-        var position;
-        var length;
+ function vidurineRaide(text) {
+    //     var position;
+    //     var length;
 
-        if(string.length % 2 == 1) {
-            position = string.length / 2;
-            length = 1;
-        } else {
-            position = string.length / 2 - 1;
-            length = 2;
-        }
+    //     if(text.length % 2 == 1) {
+    //         position = text.length / 2;
+    //         length = 1; 
+    //     } else {
+    //         position = text.length / 2 - 1;
+    //         length = 2;
+    //     }
 
-        return string.substring(position, position + length);
+   
+
+    //     return text.substring(position, position + length);
+    // } 
+    if (text === '') {
+        return '';
     }
+    const index = Math.ceil(text.length / 2 - 1);
+    return text[index];
+}
+
     
 export { vidurineRaide };
 

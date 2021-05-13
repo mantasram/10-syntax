@@ -13,14 +13,31 @@
 // function paskutineRaide('labas') -> 's'
 
 
-import { pirmaRaide } from './pirmaRaide.js';
-import { vidurineRaide } from './vidurineRaide.js';
-import { paskutineRaide } from './paskutineRaide.js';
+ import { pirmaRaide } from './pirmaRaide.js';
+ import { vidurineRaide } from './vidurineRaide.js';
+ import { paskutineRaide } from './paskutineRaide.js';
 
-function vientisasTekstas(pirmaRaide, vidurineRaide, paskutineRaide) {
-     return (pirmaRaide, vidurineRaide, paskutineRaide);
+function vientisasTekstas(textList) {
+     let answer = '';
+
+     for (let i = 0; i < textList.length; i++) {
+          const text = textList[i]
+          answer += pirmaRaide(text) + vidurineRaide(text) + paskutineRaide(text);
+     }
 
 
-console.log(vientisasTekstas['labas', 'rytas'] -> 'lbsrts';
-console.log(vientisasTekstas['mano', 'namas', 'yra', 'geltonas'] -> 'maonmsyragts';
-console.log(vientisasTekstas['as', 'i', 'ten'] , ->, 'aasiiiten';
+     return answer;
+} ;
+
+
+const s1 = vientisasTekstas(['labas', 'rytas']);
+console.log(s1, '->', 'lbsrts');
+
+const s2 = vientisasTekstas(['mano', 'namas', 'yra', 'geltonas']);
+console.log(s2, '->', 'maonmsyragts');
+
+const s3 = vientisasTekstas(['as', 'i', 'ten']);
+console.log(s3, '->', 'aasiiiten');
+
+const s4 = vientisasTekstas(['i']);
+console.log(s4, '->', 'iii')

@@ -1,7 +1,7 @@
-function pirmaRaide(string) {
-    return string.charAt(0);
-}
-
-console.log(pirmaRaide('labas'));
+ function pirmaRaide(text) {
+     return text.charAt(0);
+ }
 
 export { pirmaRaide }
+
+console.log(pirmaRaide('labas'));
